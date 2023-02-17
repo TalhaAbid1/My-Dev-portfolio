@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ABID</title>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta name="description" content="ABID's PortFolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/03bc5eed18.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ----------------------------------HEADER---------------------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="/"><img src="/resources/logo.png" class="logo" /></a>
+                <ul id="SlidingMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#MyWork">Work</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="Cross" class="fa fa-times" onclick="Cross()"></i>
+                </ul>
+                <i id="Hamburger" class="fa fa-bars" onclick="Hamburger()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p> Junior <span>Javascript</span> Develover</p>
+            <h1>I'm <span>A</span>BID<br>Loved To Be Tangled Up With <span>&lt;CODE/&gt;</span></h1>
+        </div>
+    </div>
+
+    <!-- ----------------------------------ABOUT---------------------------------- -->
+
+    <hr class="hr" id="about">
+    <div class="AboutParent">
+        <img src="/resources/about Abid.jpg" alt="Develoverz">
+        <div class="aboutMe">
+            <h1>About ABID</h1>
+            <p> As a software engineer , I designs, develops, and maintains software systems. You use your knowledge of
+                programming languages,
+                software development tools, and techniques to create and maintain software applications, platforms, and
+                systems that meet the needs of your clients or users.<br> &nbsp; A Javascript professional who
+                specializes in
+                building applications and websites using the JavaScript programming language. JavaScript is a versatile
+                language that can be used both on the front-end and back-end of web applications.</p>
+            <ul>
+
+                <li class="aboutHead Active-Link" id="skills">Skills</li>
+                <li class="aboutHead" id="experience">Experience</li>
+                <li class="aboutHead" id="education">Education</li>
+            </ul>
+            <div class="relative">
+                <div class="aboutSubHead Active" id="skillsz">
+                    <h4 class="subHead">Javascript Developer</h4>
+                    <p class="subDetails">Gread hands On <b>React.js</b></p>
+                    <h4 class="subHead">Native Developer</h4>
+                    <p class="subDetails">Strong Grip On Native Developement Using React-Native</p>
+                    <h4 class="subHead">Web Developer</h4>
+                    <p class="subDetails">Developing Websites Using React.Js</p>
+                </div>
+                <div class="aboutSubHead" id="experiencez">
+                    <h4 class="subHead">Currently Working</h4>
+                    <p class="subDetails">Working On FYP <b>React-Native.js</b></p>
+                    <h4 class="subHead">SAVE-e</h4>
+                    <p class="subDetails">Build multiple React-Native App For Practice</p>
+                    <h4 class="subHead">Web Developer</h4>
+                    <p class="subDetails">Websites are Under Developement</p>
+                </div>
+                <div class="aboutSubHead" id="educationz">
+                    <h4 class="subHead">B.S. Software Engineering</h4>
+                    <p class="subDetails">Gift University (2k19 - 2k23)</p>
+                    <h4 class="subHead">Kips Collage</h4>
+                    <p class="subDetails">FSc pre-Engineering (2k16 - 2k17)</p>
+                    <h4 class="subHead">Matriculation</h4>
+                    <p class="subDetails">City Public School (2k15)</p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <!-- ----------------------------------My WORK---------------------------------- -->
+    <hr class="hr" id="MyWork">
+    <div class="WorkParent">
+        <div id="Work">
+            <h1>My Work</h1>
+        </div>
+        <div class="MyWorks">
+            <div class="img">
+                <img src="./resources/mob.jpg" />
+                <div class="layer">
+                    <h3>Save-E App</h3>
+                    <p>Load Monitering App<br> An IoT based real-time device that will measure voltage, current, and
+                        power ratings of the single phase energy meter.Furthermore, we will Predict (ML-Base) unit
+                        consumption. Based on consumed units, User Can add Custom alarms, & much more. ❤</p>
+                    <a href="https://github.com/dexterco/Save-E" target="blank"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./resources/web.jpg" />
+                <div class="layer">
+                    <h3>Reservation Online Websites</h3>
+                    <p>A Website based, Bus Reservation System<br> includes Html, CSS, JavaScript With Backend Using PHP
+                        And MySQL as Database. ❤</p>
+                    <a href="https://github.com/TalhaAbid1/Bus-Reservation-System-Web-" target="blank"><i
+                            class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="./resources/mob1.jpg" />
+                <div class="layer">
+                    <h3>Zikar App</h3>
+                    <p>Android app Having Following Feature <br> Qibla Direction, Islamic Date & English date, Real Time
+                        Prayer Times (Through out the Year), Tasbih Counter, Dua Section, Location ,No Database. ❤</p>
+                    <a href="https://github.com/TalhaAbid1/Zikar-App" target="blank"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="morebtn" href="https://github.com/talhaAbid1" target="blank">See more</a>
+    </div>
+
+    <!-- ----------------------------------Services---------------------------------- -->
+
+    <hr class="hr" id="services">
+    <div class="ServicesParent">
+        <div id="Services">
+            <h1>Services</h1>
+        </div>
+        <div class="ServicesContent">
+            <div class="SectionA">
+                <i class="fa fa-code fa-2x"></i>
+                <h2>React.Js</h2>
+                <p> &nbsp; <b>React.Js</b> is a popular open-source JavaScript library for building user interfaces.
+                    Developed by
+                    Facebook, React is widely used for creating single-page applications, web applications, and mobile
+                    applications. React uses a component-based architecture that enables developers to create reusable
+                    UI components and build complex UI hierarchies.</p>
+            </div>
+            <div class="SectionB">
+                <i class="fa fa-mobile fa-2x"></i>
+                <h2>React-Native</h2>
+                <p> &nbsp; <b>React Native</b> is an open-source mobile application framework that allows developers to
+                    build native
+                    mobile applications for iOS, Android, and other platforms using JavaScript and React.js. It was also
+                    developed by Facebook and is widely used for creating high-performance, cross-platform mobile
+                    applications.</p>
+            </div>
+            <div class="SectionC">
+                <i class="fa fa-laptop fa-2x"></i>
+                <h2>Web Developer</h2>
+                <p> &nbsp; <b>Web Developer</b> creating websites and web applications that are accessible through the
+                    internet. It involves a range of activities, including designing the user interface, writing code,
+                    configuring web servers, and maintaining databases, There are several programming languages and tools enable
+                    developers to create dynamic and interactive web pages that can interact with users and provide a
+                    variety of functionalities.</p>
+            </div>
+        </div>
+        <!-- <div class="ServicesContent">
+            <div class="SectionA">
+                <i class="fa fa-code fa-2x"></i>
+                <h2>React.Js</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sapiente deserunt laborum. In quidem
+                    facilis, excepturi sint perspiciatis ad dolores atque illum reiciendis minus eos, hic quam
+                    recusandae voluptatem earum corporis unde ullam voluptatum quod accusamus cumque? Harum ullam quam
+                    placeat provident nisi iste quasi doloremque quae, odit minus magnam?</p>
+            </div>
+            <div class="SectionB">
+                <i class="fa fa-mobile fa-2x"></i>
+                <h2>React-Native</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sapiente deserunt laborum. In quidem
+                    facilis, excepturi sint perspiciatis ad dolores atque illum reiciendis minus eos, hic quam
+                    recusandae voluptatem earum corporis unde ullam voluptatum quod accusamus cumque? Harum ullam quam
+                    placeat provident nisi iste quasi doloremque quae, odit minus magnam?</p>
+            </div>
+            <div class="SectionC">
+                <i class="fa fa-laptop fa-2x"></i>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sapiente deserunt laborum. In quidem
+                    facilis, excepturi sint perspiciatis ad dolores atque illum reiciendis minus eos, hic quam
+                    recusandae voluptatem earum corporis unde ullam voluptatum quod accusamus cumque? Harum ullam quam
+                    placeat provident nisi iste quasi doloremque quae, odit minus magnam?</p>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- ----------------------------------Contact Me---------------------------------- -->
+
+    <hr class="hr" id="contact">
+    <div class="ContactParent">
+        <div id="contact">
+            <h1 class="head">Contact ABID</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Software Engineer</h1>
+                    <p><a href="mailto: talhaabid353@gmail.com"><i class="fa fa-envelope"></i> &nbsp;
+                            talhaabid353@gmail.com</a></p>
+                    <p><a href="tel: +923436060252"><i class="fa fa-phone"></i> &nbsp; +923054945593</a></p>
+                    <div class="icon">
+                        <a href="https://github.com/TalhaAbid1" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/talha-abid-1b563b253/?originalSubdomain=pk" target="_blank"
+                            rel="noopener noreferrer"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="https://www.facebook.com/talha.abid.100" target="_blank" rel="noopener noreferrer"><i
+                                class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://twitter.com/_ABID_100?t=ERMj5yM-tNTcFRR29M9Mbg&s=09" target="_blank"
+                            rel="noopener noreferrer"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="https://www.instagram.com/talha.abid.100/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                            rel="noopener noreferrer"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <a class="resume" href="./resources/Abid-CV.pdf" download="ABID"><i class="fa fa-download"></i>
+                        &nbsp; Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <hr class="hr">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="SenderName" placeholder="Enter Your Name" required
+                            autocomplete="off" />
+                        <input type="email" name="SenderEmail" placeholder="Enter Your Email" required
+                            autocomplete="off" />
+                        <textarea type="text" name="Message" rows="3"
+                            placeholder="Hey There!&#10;Please Leave Your Concerns Here For ABID" required
+                            autocomplete="off"></textarea>
+                        <button type="submit" class="Form-Submit">Submit</button>
+                    </form>
+                    <span id="FormMsg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------FOOTER---------------------------------- -->
+
+    <div id="Footer">
+        <ul>
+            <!-- <li><a href="https://github.com/TalhaAbid1" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/talha-abid-1b563b253/?originalSubdomain=pk" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://www.facebook.com/talha.abid.100" target="_blank" rel="noopener noreferrer"><i
+                        class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/_ABID_100?t=ERMj5yM-tNTcFRR29M9Mbg&s=09" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/talha.abid.100/?igshid=ZDdkNTZiNTM%3D" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-instagram fa-2x"></i></a></li> -->
+        </ul>
+        <hr class="hr">
+        <h4>&#169; Copyright 2k23 : All Rights Reserved By |<a href="#header"><img src="/resources/Footer-Icon.ico"
+                    alt=""></a>| &ensp;❤ </h4>
+    </div>
+
+    <script src="/index.js" async defer></script>
+</body>
+
+</html>

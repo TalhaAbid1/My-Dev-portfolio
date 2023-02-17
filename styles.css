@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/Test.png ');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ----------------------HEADER CODE STARTS---------------------- */
+.container{
+    /* background-color: #363030; */
+    padding-right: 5%;
+    padding-left: 5%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 155px;
+    height: 110px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    background: #ff004f;
+    bottom: -3px;
+    left: 0px;
+    height: 3px;
+    border-radius: 10px;
+    transition-duration: 0.7s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    /* background-color: #363030; */
+    padding: 15px;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: 3%;
+    float: left;
+    border-radius: 10px;
+    user-select: none;
+}
+div.header-text p span{
+    color: #EAD41C;
+    font-weight: bold;
+}
+div.header-text h1 span{
+    color: #ff004f;
+}
+/* HAMBURGER MENU */
+nav .fa{
+    display: none;
+}
+/* ----------------------HEADER CODE ENDS---------------------- */
+/* RESPONSIVE NAV-BAR */
+@media only screen and (max-width: 1100px) {
+    div.header-text h1{
+        font-size: x-large;
+    }
+    .header-text{
+        margin-right: 1%;
+        margin-top: 30%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    div.header-text h1{
+        font-size: large;
+    }
+    .header-text{
+        margin-right: 1%;
+        margin-top: 45%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header-text{
+        margin-right: 1%;
+        margin-top: 65%;
+    }
+}
+/* HAMBURGER MENU */
+@media only screen and (max-width: 850px) {
+    nav .fa{
+        display: block;
+        font-size: xx-large;        
+        color: #ff004f;
+        cursor: pointer;
+    }
+    nav ul{
+        background-color: #363030;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 230px;
+        height: 80vh;
+        padding-left: 48px;
+        border-bottom-left-radius: 250px;
+        border-top-left-radius: 50px;
+        border-left: 7px solid #ff004f;
+        z-index: 7;
+        transition: right 0.9s;
+    }
+    nav ul li{
+        display: block;
+        margin-top:50px;
+        font-weight: 700;
+        text-shadow: 2px 2px 15px #ff004f;
+    } 
+    nav ul li:nth-child(1){
+        margin-top:85px;
+    } 
+    nav ul .fa{
+        position: absolute;
+        top: 35px;
+        left: 9%;
+    }
+}
+
+
+/* ----------------------ABOUT_ME CODE BEGAN---------------------- */
+.AboutParent{
+    margin: 3%  9%;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.AboutParent  img{
+    flex-basis: 25%;
+    margin-bottom: 2%;
+    width: fit-content;
+    border-radius: 20px;
+}
+div.AboutParent .aboutMe{
+    flex-basis: 60%;
+    flex-wrap: nowrap;
+}
+.aboutMe h1{
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 18px;
+    border-left: 5px solid #ff004f;
+    border-radius: 7px;
+}
+.aboutMe p{
+    text-indent: 30px;
+}
+.aboutMe ul{
+    padding-top: 10px;
+}
+.aboutMe ul li{
+    font-size: larger;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.aboutMe ul li.aboutHead.Active-Link::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    background: #ff004f;
+    bottom: -3px;
+    left: 0px;
+    height: 3px;
+    border-radius: 10px;
+}
+.aboutSubHead{
+    display: none;
+}
+.relative{
+    position: relative;
+}
+.aboutSubHead.Active{
+    display: block;
+    position: absolute;
+}
+.subHead{
+    color: #ff004f;
+    margin-bottom: 5px;
+}
+.subDetails{
+    margin-bottom: 12px;
+}
+/* ----------------------ABOUT_ME CODE ENDS---------------------- */
+@media only screen and (max-width: 1000px) {
+    .aboutMe p{
+        font-size: 15px;
+    }
+    .relative {
+        margin-bottom: 27vh;
+    }
+    .aboutMe ul{
+        font-size: medium;
+    }
+    div.AboutParent  img{
+        flex-basis: 20%;
+        height: 50vh;
+        border-radius: 20px;
+    }
+    .AboutParent{
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .aboutMe ul{
+        font-size: small;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .aboutMe ul{
+        font-size: small;
+    }
+    .aboutMe p{
+        font-size: 13px;
+    }
+    .relative {
+        margin-bottom: 24vh;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .aboutMe ul{
+        font-size: x-small;
+    }
+}
+
+/* ----------------------MY WORK BEGAN---------------------- */
+.WorkParent{
+    margin: 3%  7%;
+}
+#Work h1{
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 3%;
+    border-left: 5px solid #ff004f;
+    border-radius: 7px;
+}
+.MyWorks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img{
+    flex-basis: 28%;
+    flex-direction: row;
+    opacity: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+.img img{
+    border-radius: 10px;
+    width:100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.9s;
+}
+.layer{
+    height: 0%;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,0.7),#ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px 23px ;
+    border-radius: 10px;
+    text-align: center;
+    transition: height 0.9s;
+}
+.layer p{
+    margin: 15px 0px;
+    font-size: 17px;
+}
+.layer a{
+    background-color: #ffffff;
+    color: #ff004f;
+    border-radius: 50%;
+    padding: 13px;
+    margin-top: 5px;
+}
+.layer a i{
+    font-size: x-large;
+}
+.morebtn{
+    border: 2px solid #ff004f;
+    background-color: #000000;
+    display: block;
+    margin: 40px auto;
+    width: fit-content;
+    color: #ffffff;
+    padding: 9px 23px;
+    border-radius: 10px;
+    transition:  background-color 1.5s;
+}
+.morebtn:hover{
+    background-color: #ff004f;
+}
+.img:hover img{
+    transform: scale(1.1);
+}
+.img:hover .layer{
+    height: 100%;
+}
+/* ----------------------MY WORK ENDS---------------------- */
+@media only screen and (max-width: 1200px) {
+    .MyWorks{
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width: 1400px) {
+    .layer p{
+        font-size: small;   
+    }
+}
+/* ----------------------SERVICES CODE BEGAN---------------------- */
+
+.ServicesParent{
+    margin: 3%  6%;
+}
+#Services h1{
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-left: 5px solid #ff004f;
+    border-radius: 7px;
+}
+.ServicesContent{
+    display: flex;
+    justify-content: space-between;
+}
+.ServicesContent div{
+    margin-top:13px;
+    transition: background 0.9s , transform 0.7s;
+}
+.ServicesContent div i{
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 13px;
+    transition: rotate 1s;
+}
+.ServicesContent div h2{
+    margin-bottom:7px;
+}
+.SectionA{
+    flex-basis: 30%;
+    color: #ffffff;
+    border-radius: 13px;
+    background-color: #363030;
+    padding: 10px;
+}
+.SectionA p{
+    padding-left: 5px;
+}
+.SectionB{
+    flex-basis: 30%;
+    color: #ffffff;
+    border-radius: 13px;
+    background-color: #363030;
+    padding: 10px;
+}
+.SectionB p{
+    padding-left: 5px;
+}
+.SectionC{
+    flex-basis: 30%;
+    color: #ffffff;
+    border-radius: 13px;
+    background-color: #363030;
+    padding: 10px;
+}   
+.SectionC p{
+    padding-left: 5px;
+}
+.ServicesContent div:hover{
+    background: #ff004f;
+    transform: translateY(-7px);
+}
+
+/* ----------------------SERVICES CODE ENDS---------------------- */
+@media only screen and (max-width: 950px) {
+    #Services h1{
+        font-size: x-large;
+    }
+    .ServicesContent{
+        flex-direction: column;
+    }
+    .ServicesContent div h2{
+        font-size: large;
+    }
+    .ServicesContent div p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    #Services h1{
+        font-size: x-large;
+    }
+    .ServicesContent{
+        flex-direction: column;
+    }
+    .ServicesContent div h2{
+        font-size: large;
+    }
+    .ServicesContent div p{
+        font-size: 13px;
+    }
+}
+
+/* ----------------------CONTACT ME BEGAN---------------------- */
+.ContactParent{
+    margin: 3%  7%;
+}
+.head{
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 3%;
+    border-left: 5px solid #ff004f;
+    border-radius: 7px;
+}
+.row{
+    display: flex;
+    justify-content: space-between; 
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.sub-title{
+    margin-bottom: 25px;
+}
+.contact-left p a{
+    color: #ffffff;
+    font-size: 18px;
+    margin: auto;
+}
+.contact-left p a i{
+    color: #ff004f;
+    font-size: larger;
+}
+.contact-left p{
+    margin: 20px 0px;
+}
+.icon {
+    margin-left: 7px;
+}
+.icon a{
+    text-decoration: none;
+    color: #ababab;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 13px;
+    display: inline-block;
+    transition: color 0.5s;
+    transition: transform 0.5s;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+}
+#FormMsg{
+    color: #ff004f;
+    font-size: 23px;
+}
+form input , form textarea{
+    width: 100%;
+    border: 0px;
+    outline: none;
+    background-color: #363030;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+form .Form-Submit{
+    padding: 14px 60px ;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    align-self: center;
+    align-content:center ;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #ff004f;
+}
+::placeholder {
+    color: #ff004f;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #ff004f;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: #ff004f;
+}
+
+.resume{
+    border: 3px solid #363030;
+    background-color: #ababab;
+    display: block;
+    width: fit-content;
+    color: #000000;
+    padding: 9px 23px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 3px;
+    border-radius: 10px;
+    font-weight: 400;
+    transition:  background-color 0.5s;
+    transition:  color 0.5s;
+}
+.resume:hover{
+    background-color: #ff004f ;
+    color: #ffffff;
+}
+.icon a:nth-child(1):hover{
+    color: #171515;
+    transform: translateY(-5px);
+}
+.icon a:nth-child(2):hover{
+    color:  #0072b1;
+    transform: translateY(-5px);
+}
+.icon a:nth-child(3):hover{
+    color: #3b5998;
+    transform: translateY(-5px);
+}
+.icon a:nth-child(4):hover{
+    color: #00acee;
+    transform: translateY(-5px);
+}
+.icon a:nth-child(5):hover{
+    background: -webkit-linear-gradient(#7E0BF3, #E80169 , #F14A22 , #F7BF02);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-5px);
+}
+/* ----------------------CONTACT ME ENDS---------------------- */
+@media only screen and (max-width: 960px) {
+    .icon a{
+        font-size: medium;
+    }
+    .sub-title{
+        font-size: x-large;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .contact-left p a i{
+        font-size: medium;
+    }
+    .contact-left p a{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .contact-left p a i{
+        font-size: larger;
+    }
+    .contact-left p a{
+        font-size: 18px;
+    }
+    .icon a{
+        font-size: larger;
+    }
+    .sub-title{
+        font-size: xx-large;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    form .Form-Submit , .resume{
+        width: 100%;
+    }
+}
+
+/* ----------------------FOOTER CODE BEGAN---------------------- */
+#Footer{
+    /* align-items: center; */
+    background-color: #363030;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+div#Footer ul li{
+    display: inline-block;
+    margin: 1%;
+}
+div#Footer ul li a{
+    text-emphasis: none;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+hr.hr{
+    margin: auto;
+    width: 80%;
+    height: 3px;
+    background-color: #ff004f;
+    border: none;
+    border-radius: 7px;
+}
+div#Footer h4 img{
+    width: 50px;
+    height: 45px;
+    margin-bottom: -17px;
+}
+div#Footer ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    background: #ff004f;
+    bottom: -4px;
+    right: 0px;
+    height: 3px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+div#Footer ul li a:hover::after{
+    width: 100%;
+}
+/* ----------------------FOOTER CODE ENDS---------------------- */
+@media only screen and (max-width: 510px) {
+    #Footer h4{
+        font-size: small;
+    }
+}
+
+
+/* ----------------------STYLING SCROLLING STYLES---------------------- */
+/* TOTLE SIZE */
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* BACKGROUND */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 15px #363030; 
+border-radius: 3px;
+}
+/* ACTUAL BAR */
+::-webkit-scrollbar-thumb {
+background: grey; 
+border-radius: 10px;
+}
+/* HOVER EFFECT */
+::-webkit-scrollbar-thumb:hover {
+background: #ff004f; 
+}
