@@ -59,12 +59,21 @@ const form = document.forms['submit-to-google-sheet']
 let SendSuccessMsg = document.getElementById("FormMsg")
 form.addEventListener('submit', e => {
   e.preventDefault()
+  const disableMe = document.getElementById("SubmitBtn");
+  disableMe.innerHTML = "Wait Please... ";
+  disableMe.style.background = "#440217";
+  document.getElementById("GrandParent").style.cursor = "progress";
+  disableMe.style.cursor = "not-allowed";
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       SendSuccessMsg.innerHTML = "Thanks ❤ <br>Your Messgae Sent Succcessfully."
       setTimeout(() => {
         $("#FormMsg").fadeOut();
-      }, 5000);
+      }, 3000);
+      disableMe.innerHTML = "Submit";
+      disableMe.style.background = "#ff004f";
+      document.getElementById("GrandParent").style.cursor = "default";
+      disableMe.style.cursor = "pointer";
       form.reset();
     })
     .catch(error => {

@@ -36,6 +36,8 @@ nav{
 .logo{
     width: 155px;
     height: 110px;
+    border-radius: 100px;
+    box-shadow: -5px 0px 3px #013952;   
 }
 nav ul li{
     display: inline-block;
@@ -112,6 +114,12 @@ nav .fa{
 }
 /* HAMBURGER MENU */
 @media only screen and (max-width: 850px) {
+    .logo{
+        width: 125px;
+        height: 90px;
+        border-radius: 100px;
+        box-shadow: -5px 0px 3px #013952;   
+    }
     nav .fa{
         display: block;
         font-size: xx-large;        
@@ -123,14 +131,15 @@ nav .fa{
         position: fixed;
         top: 0;
         right: 0;
-        width: 230px;
-        height: 80vh;
+        width: 220px;
+        height: 67vh;
+        opacity: 0.98;
         padding-left: 48px;
         border-bottom-left-radius: 250px;
         border-top-left-radius: 50px;
         border-left: 7px solid #ff004f;
         z-index: 7;
-        transition: right 0.9s;
+        transition: right 1s;
     }
     nav ul li{
         display: block;
@@ -527,6 +536,7 @@ form .Form-Submit{
     align-self: center;
     align-content:center ;
     border-radius: 10px;
+    border: #ff004f;
     color: #ffffff;
     background-color: #ff004f;
 }

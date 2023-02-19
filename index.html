@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="GrandParent">
     <!-- ----------------------------------HEADER---------------------------------- -->
     <div id="header">
         <div class="container">
@@ -223,14 +223,14 @@
                 <div class="contact-right">
                     <hr class="hr">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="SenderName" placeholder="Enter Your Name" required
+                        <input class="inputBottomShadow"  type="text" name="SenderName" placeholder="Enter Your Name" required
                             autocomplete="off" />
-                        <input type="email" name="SenderEmail" placeholder="Enter Your Email" required
+                        <input class="inputBottomShadow" type="email" name="SenderEmail" placeholder="Enter Your Email" required
                             autocomplete="off" />
-                        <textarea type="text" name="Message" rows="3"
+                        <textarea class="inputBottomShadow" type="text" name="Message" rows="3"
                             placeholder="Hey There!&#10;Please Leave Your Concerns Here For ABID" required
                             autocomplete="off"></textarea>
-                        <button type="submit" class="Form-Submit">Submit</button>
+                        <button id="SubmitBtn" type="submit" class="Form-Submit">Submit</button>
                     </form>
                     <span id="FormMsg"></span>
                 </div>
