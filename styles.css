@@ -65,10 +65,70 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+/* CLOCK */
+#containerClock
+{
+    margin-left: 13%;
+    margin-top: 3%;
+	border-radius: 50%;
+	box-shadow: -19px 1px 13px #013952;
+	position: relative;
+	height: 15vw;
+	width: 15vw;
+	background: url(resources/clock0.png) no-repeat;
+	background-size: 100%;
+}
+#hours , #minutes , #seconds , #dot
+{
+	transform-origin: bottom;
+}
+#hours
+{
+	position: absolute;
+	background: black;
+	border-radius: 20px;
+	width: 2%;
+	height: 26%;
+	top: 24.3%;
+    left: 48.79%;
+}
+#minutes
+{
+	position: absolute;
+	background: black;
+	border-radius: 25px;
+	width: 1.8%;
+	height: 30%;
+	top: 20%;
+	left: 48.89%;
+	opacity: 0.8;
+}
+#seconds
+{
+	position: absolute;
+	background: gold;
+	border-radius: 55px;
+	width: 0.9%;
+	height: 40%;
+	top: 10%;
+	left: 49.3%;
+}
+#dot
+{
+	position: absolute;
+	border-radius: 50%;
+	background: black;
+	width: 7%;
+	height: 7%;
+	top: 46%;
+	left: 46.3%;
+    z-index: 3;
+}
+/* CLOCK END*/
 .header-text{
     /* background-color: #363030; */
     padding: 15px;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-right: 5%;
     margin-left: 3%;
     float: left;
@@ -81,6 +141,7 @@ div.header-text p span{
 }
 div.header-text h1 span{
     color: #ff004f;
+    text-shadow: 3px 3px 9px #7c0128;
 }
 /* HAMBURGER MENU */
 nav .fa{
