@@ -221,17 +221,23 @@ nav .fa{
 
 /* ----------------------ABOUT_ME CODE BEGAN---------------------- */
 .AboutParent{
-    margin: 3%  9%;
+    margin: 3%  1%;
     margin-top: 4%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 div.AboutParent  img{
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
     margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
     width: fit-content;
-    border-radius: 20px;
+    border-radius: 50px;
+}
+.aboutMe{
+    margin-left: 100px;
+    margin-right: 100px;
 }
 div.AboutParent .aboutMe{
     flex-basis: 60%;
@@ -266,7 +272,7 @@ div.AboutParent .aboutMe{
     width: 100%;
     background: #ff004f;
     bottom: -3px;
-    left: 0px;
+    left: 0px; 
     height: 3px;
     border-radius: 10px;
 }
@@ -301,10 +307,20 @@ div.AboutParent .aboutMe{
     div.AboutParent  img{
         flex-basis: 20%;
         height: 50vh;
-        border-radius: 20px;
+        border-radius: 100px;
     }
     .AboutParent{
-        justify-content: space-around;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 1001px) {
+    div.AboutParent  img{
+        flex-basis: 15%;
+        height: 50vh;
+        border-radius: 100px;
+    }
+    div.AboutParent .aboutMe{
+        margin-bottom: 12%;
     }
 }
 @media only screen and (max-width: 510px) {
@@ -417,11 +433,13 @@ div.AboutParent .aboutMe{
     .MyWorks{
         flex-direction: column;
     }
-
+    .layer{
+        height: 100%;
+    }
 }
 @media only screen and (max-width: 1400px) {
     .layer p{
-        font-size: small;   
+        font-size: small;
     }
 }
 /* ----------------------SERVICES CODE BEGAN---------------------- */

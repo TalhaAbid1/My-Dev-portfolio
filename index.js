@@ -54,7 +54,7 @@ $('#education').on('click', function () {
 // SCRIPT FOR GETTING DATA FROM FORM TO GOOGLE SHEETS
 
 // const ENV ==> Cann't Share Due To Security Reasons
-const scriptURL = 'ENV HERE';
+const scriptURL = "";
 const form = document.forms['submit-to-google-sheet']
 let SendSuccessMsg = document.getElementById("FormMsg")
 form.addEventListener('submit', e => {
